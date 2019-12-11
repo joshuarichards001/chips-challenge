@@ -1,0 +1,6 @@
+The persistence package. This is responsible for reading map files and reading/writing files representing the
+ current game state (in JSON format).
+
+The persistence module saves the game state: the time left, and the position of Chap and other actors (if there 
+are any), the treasures he holds, etc. Game state should be saved using the JSON format. Ensure (by means of 
+testing or inspection) that the JSON format used is valid. 

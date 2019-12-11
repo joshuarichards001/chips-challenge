@@ -1,0 +1,21 @@
+The maze package. This is responsible for maintaining the current state of the game, such as where the objects
+ in the game currently are, and also for determining what actions are allowed within the game.
+
+The game has levels, each level has a unique maze. Level 1 should have all the tiles listed in the table above,
+and at least two different types (colours) of keys. Develop and use a creative custom look and feel (in particular,
+ use your own icons).  Keep it simple so that the level can be easily played and finished within one minute. You 
+should also implement a second level with some different tiles. The original Chip's Challenge game will provide 
+some ideas, but you should invent your own tiles (see below). You should also use a second type of actor in level
+ 2 -- an actor is a game character that moves around, like Chap, and interacts with Chap (for instance, by
+ exploding and eating Chap or robbing him). Unlike Chap, actors will move around on their own, and are not
+ directed by user input. 
+ 
+The maze package is responsible for maintaining the game state and implementing the game logic. The game state is
+ primarily made up of the maze itself, the current location of Chap on the maze, the treasure chest and other items
+ Chap has collected, such as keys. The game logic controls what events may, or may not happen in the game world 
+(e.g. �Can Chap go through this door?�, �Can Chap pick up this object?�, �Does this key open that door?�, etc.)
+
+The core logic of the game is that the player moves Chap around the maze until he reaches the exit and
+advances to the next level (if there is another level). Levels have a timeout, if the timeout is reached 
+before Chap reaches the exit, the level stops, and the player gets the option to restart the game at the 
+current level. 

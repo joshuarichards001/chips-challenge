@@ -1,0 +1,8 @@
+The renderer package. This is responsible for drawing the maze onto a canvas and mapping key strokes on the canvas
+ back to objects in the game world, etc.
+
+The rendering window is responsible for providing a simple 2-dimensional view of the maze, updated after each
+move in order to display the current game play. If you use �actors� that move around freely (like bugs trying 
+to eat Chap), then the renderer needs to update the maze view more often. Rendering should ensure that the movement
+ of the game board looks smooth. For larger boards, only a certain focus region of the board should be displayed,
+ check the original Chip's Challenge game for an idea about the size of this focus area.

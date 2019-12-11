@@ -1,0 +1,21 @@
+The application package. This is responsible for managing the functionality of the game
+(e.g. starting new games, loading/saving games, moving the player, managing the application window(s), etc).
+
+The application should provide a Graphical User Interface through which the player can see the maze and interact with it through the following key strokes:
+
+CTRL-X  - exit the game, the current game state will be lost, the next time the game is started, it will resume from the last unfinished level
+CTRL-S  - exit the game, saves the game state, game will resume next time the application will be started
+CTRL-R  - resume a saved game
+CTRL-P  - start a new game at the last unfinished level
+CTRL-1 - start a new game at level 1
+SPACE - pause the game and display a �game is paused� dialog
+ESC - close the �game is paused� dialog and resume the game
+UP, DOWN, LEFT, RIGHT ARROWS -- move Chap within the maze
+
+The application window should display the time left to play, the current level, and the number of treasures that
+ still need to be collected.  It should also offer buttons and menu items to pause and exit the game, to save 
+the game state and to resume a saved game, and to display a help page with game rules. 
+
+Note that the drawing of the actual maze is not the responsibility of the application component, but of the rendering component.
+
+The application package must include an executable class nz.ac.vuw.ecs.swen225.a3.application.Main which starts the game.
